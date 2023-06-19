@@ -1,4 +1,4 @@
-import pygame 
+import pygame
 
 class Ship():
     """ Класс для управления кораблём"""
