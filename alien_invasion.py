@@ -21,7 +21,7 @@ class AlienInvasion:
                     sys.exit()
                     
             # При каждом прозоду цикла перерисовывается экран
-            self.screen.fill(self.bg_color)
+            self.screen.fill(self.settings.bg_color)
             
             #! Отображение последнего прорисованного экрана
             pygame.display.flip()
@@ -30,4 +30,3 @@ if __name__ == "__main__":
     # Создание экземпляра и запуск игры
     ai = AlienInvasion()
     ai.run_game()
-
