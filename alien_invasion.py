@@ -1,4 +1,5 @@
 import pygame
+
 import sys
 
 class AlienInvasion:
@@ -20,5 +21,5 @@ class AlienInvasion:
 
 if __name__ == "__main__":
     # Создание экземпляра и запуск игры
-    ai = AlienInvasion
+    ai = AlienInvasion()
     ai.run_game()
