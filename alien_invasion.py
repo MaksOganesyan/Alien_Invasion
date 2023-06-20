@@ -9,7 +9,8 @@ class AlienInvasion():
         """ Инициализирует игру и создаёт игровые ресурсы """
         pygame.init()
         self.settings = Settings()
-        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height)) 
+        self.screen = pygame.display.set_mode((self.settings.screen_width,
+                                               self.settings.screen_height)) 
         self.ship = Ship(self)
         pygame.display.set_caption("Alien Invasion")
         
