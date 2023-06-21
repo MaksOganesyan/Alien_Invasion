@@ -25,6 +25,8 @@ class AlienInvasion():
             # При каждом прозоду цикла перерисовывается экран
             self.screen.fill(self.settings.bg_color)
             self.ship.blitme()
+            
+            
 
             
             #! Отображение последнего прорисованного экрана
