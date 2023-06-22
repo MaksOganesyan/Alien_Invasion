@@ -2,7 +2,6 @@ import pygame
 import sys
 from settings import Settings
 from ship import Ship
-from sherek import Sherek
 
 class AlienInvasion():
     """ Класс для управления ресурсами и поведением игры"""
@@ -13,7 +12,6 @@ class AlienInvasion():
         self.screen = pygame.display.set_mode((self.settings.screen_width,
                                                self.settings.screen_height)) 
         self.ship = Ship(self)
-        self.sherek = Sherek(self)
         pygame.display.set_caption("Alien Invasion")
         
     def run_game(self):
@@ -32,7 +30,7 @@ class AlienInvasion():
         """Обновляет изображения на экране и отображает новый экран"""
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
-        self.sherek.sherek_blit()
+        self.sherek.sherek_blitme()
         pygame.display.flip()
 
 if __name__ == "__main__":
