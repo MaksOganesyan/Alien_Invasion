@@ -30,7 +30,6 @@ class AlienInvasion():
         """Обновляет изображения на экране и отображает новый экран"""
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
-        self.sherek.sherek_blitme()
         pygame.display.flip()
 
 if __name__ == "__main__":
